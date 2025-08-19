@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+         header {
+      background-color: #6b4e31;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 2em; font-weight: bold; margin-left: 20px; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li { margin: 0 15px; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .search-bar {
+      margin: 0 20px;
+      display: flex;
+    }
+    .search-bar input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+    .search-bar button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #fff;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header style="text-align: right; padding: 30px; background-color: #222; color: #fff;"><div class="logo">ChocoDelight</div>
+    <nav>
+      <ul>
+        <li><a href="ecom.html">Home</a></li>
+        <li><a href="ShopNow.html">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search chocolates...">
+      <button>🔍</button>
+    </div>
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div></header>
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-blue-600 text-white py-6">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold">About Us</h1>
+                <p class="mt-2 text-lg">Discover who we are and what drives us.</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-12 flex-grow">
+            <!-- About Section -->
+            <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Story</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Founded in [Year], we started with a simple mission: to make a positive impact through innovation and dedication. Our team is passionate about delivering high-quality solutions that empower individuals and businesses alike. With a focus on creativity, collaboration, and excellence, we strive to exceed expectations in everything we do.
+                </p>
+            </section>
+
+            <!-- Mission Section -->
+            <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Mission</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Our mission is to [insert mission statement, e.g., "create meaningful experiences that inspire and connect people"]. We believe in fostering a culture of integrity, innovation, and inclusivity, ensuring that every project we undertake reflects our core values.
+                </p>
+            </section>
+
+            <!-- Team Section -->
+            <section class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Team Member 1 -->
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/150" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-medium text-gray-800">Jane Doe</h3>
+                        <p class="text-gray-500">Founder & CEO</p>
+                        <p class="text-gray-600 mt-2">Jane leads with vision and passion, driving our team to achieve greatness.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/150" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-medium text-gray-800">John Smith</h3>
+                        <p class="text-gray-500">Lead Developer</p>
+                        <p class="text-gray-600 mt-2">John crafts innovative solutions with a focus on quality and performance.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/150" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-xl font-medium text-gray-800">Emily Johnson</h3>
+                        <p class="text-gray-500">Marketing Director</p>
+                        <p class="text-gray-600 mt-2">Emily brings creativity and strategy to connect with our audience.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-6">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; [Year] Your Company Name. All rights reserved.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-blue-300 hover:text-blue-500 mx-2">Contact</a>
+                    <a href="#" class="text-blue-300 hover:text-blue-500 mx-2">Privacy Policy</a>
+                    <a href="#" class="text-blue-300 hover:text-blue-500 mx-2">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
