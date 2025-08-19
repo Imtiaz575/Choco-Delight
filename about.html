@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchingDom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    
+</head>
+
+<style>
+    body {
+     margin: 0; font-family: Arial, sans-serif;color: #3d2626; }
+    main { padding: 20px; background-color: #503c2d; }
+    .header-section { text-align: center; margin-bottom: 40px; }
+    .header-section h2 { color: #6b4e31; font-size: 2em; }
+    .header-section p { color: #8b5e3c; }
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #3d2626;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    about-content h3 { color: #6b4e31; font-size: 1.5em; }
+    .about-content p { color: #8b5e3c; }
+    .team-section { text-align: center; margin-top: 40px; }
+    .team-section h3 { color: #6b4e31; font-size: 1.5em; }
+    .team-section p { color: #8b5e3c; }
+    footer {
+      background-color: #6b4e31;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ChocoDelight</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ecom.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Links.html">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Brz Choco
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Thor_(Marvel_Cinematic_Universe)" target="_blank">Truffles</a></li>
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Loki_(Marvel_Cinematic_Universe)" target="_blank">Brigaderio</a></li>
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Wanda_Maximoff_(Marvel_Cinematic_Universe)" target="_blank">Bonpota</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.marvel.com/comics/characters" target="_blank">More </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<div id="root"></div>
+
+  <script type="text/babel">
+    const HeaderSection = () => (
+      <section className="header-section">
+        <h2>About ChocoDelight</h2>
+        <p>Discover the story behind your favorite chocolates.</p>
+      </section>
+    );
+
+    const AboutContent = () => (
+      <div className="about-content">
+        <h3>Our Story</h3>
+        <p>Founded in 2010, ChocoDelight began as a small family business passionate about crafting premium chocolates. From our humble beginnings in Cocoa City, we’ve grown into a beloved brand known for quality and taste.</p>
+
+        <h3 style={{ marginTop: '20px' }}>Our Mission</h3>
+        <p>At ChocoDelight, we are committed to using the finest ingredients to create chocolates that delight every palate. Sustainability and customer satisfaction are at the heart of everything we do.</p>
+      </div>
+    );
+
+    const TeamSection = () => (
+      <section className="team-section">
+        <h3>Meet Our Team</h3>
+        <p>Our dedicated chocolatiers and staff work tirelessly to bring you the best.</p>
+      </section>
+    );
+
+    const Footer = () => (
+      <footer>
+        <p>&copy; 2025 ChocoDelight. All rights reserved.</p>
+        <p>About as of 11:19 PM IST, Monday, August 18, 2025.</p>
+      </footer>
+    );
+
+    const App = () => (
+      <main>
+        <HeaderSection />
+        <AboutContent />
+        <TeamSection />
+        <Footer />
+      </main>
+    );
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+      
+      
+
+    <script src="SearchDom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

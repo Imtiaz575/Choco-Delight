@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet & Sour Chocolate - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e8d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .signup-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #5c2d1e;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            color: #5c2d1e;
+            margin-bottom: 0.5rem;
+        }
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d4a373;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        input:focus {
+            outline: none;
+            border-color: #e07b39;
+        }
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #e07b39;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c2652d;
+        }
+        .terms {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #5c2d1e;
+            margin-top: 1rem;
+        }
+        .terms a {
+            color: #e07b39;
+            text-decoration: none;
+        }
+        .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Join Sweet & Sour Chocolate</h2>
+        <form action="/submit-signup" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Create a password" minlength="8">
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="terms">
+                By signing up, you agree to our <a href="/terms">Terms</a> and <a href="/privacy">Privacy Policy</a>.
+            </p>
+        </form>
+    </div>
+</body>
+</html>

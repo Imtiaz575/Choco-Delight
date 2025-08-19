@@ -1,0 +1,48 @@
+htm<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChocoDelight</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const Header = () => (
+      <header className="bg-brown-800 text-white p-4 text-center">
+        <h1 className="text-3xl font-bold">ChocoDelight</h1>
+      </header>
+    );
+
+    const ProductCard = ({ name, description }) => (
+      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white m-4">
+        <div className="px-6 py-4">
+          <div className="font-bold text-xl mb-2">{name}</div>
+          <p className="text-gray-700 text-base">{description}</p>
+        </div>
+      </div>
+    );
+
+    const App = () => (
+      <div className="bg-brown-100 min-h-screen">
+        <Header />
+        <main className="container mx-auto p-4">
+          <h2 className="text-2xl font-semibold text-center mb-4">Our Chocolates</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <ProductCard name="Dark Chocolate" description="Rich and smooth dark chocolate bar." />
+            <ProductCard name="Milk Chocolate" description="Creamy milk chocolate with a velvety finish." />
+            <ProductCard name="White Chocolate" description="Sweet and creamy white chocolate delight." />
+          </div>
+        </main>
+      </div>
+    );
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>

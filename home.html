@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet & Sour Chocolate - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e8d3;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #5c2d1e;
+            color: white;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 1rem 0;
+            border-collapse: collapse;
+        }
+        th {
+            padding: 1rem;
+            background-color: #e07b39;
+            color: white;
+            font-size: 1.1rem;
+        }
+        th a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        th a button {
+            background-color: #c2652d;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        th a button:hover {
+            background-color: #a55224;
+        }
+        th a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: center;
+            padding: 2rem;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .caption {
+            color: #5c2d1e;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Sweet & Sour Chocolate</h1>
+    </div>
+    <div class="content">
+        <table>
+            <caption>
+                <h2 class="caption">Sweet & Sour Chocolate</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th><a href="home.html">Home</a></th>
+                    <th><a href="/contact">Contact</a></th>
+                    <th><a href="signup.html">Sign Up</a></th>
+                    <th><a href="signin.html"><button>Sign In</button></a></th>
+                </tr>
+            </thead>
+        </table>
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwYmFyc3xlbnwwfHwwfHx8MA%3D%3D" alt="Chocolate" width="600" >
+        </div>
+</body>
+</html>
