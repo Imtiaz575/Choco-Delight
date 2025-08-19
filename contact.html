@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchingDom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="SearchDom.css" type="text/css">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+<style>
+    body {
+    background-image: url('https://wallpapers.com/images/hd/dark-brown-background-1600-x-1000-sg7d3k9qlce2wrih.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    body { margin: 0; font-family: Arial, sans-serif; }
+    main { padding: 20px; background-color: #f9e4d4; }
+    .header-section { text-align: center; margin-bottom: 40px; }
+    .header-section h2 { color: #6b4e31; font-size: 2em; }
+    .header-section p { color: #8b5e3c; }
+    .contact-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 40px; }
+    .contact-card {
+      width: 400px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .store-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .contact-card h3, .store-card h3 { color: #6b4e31; }
+    .contact-card p, .store-card p { color: #8b5e3c; }
+    .contact-card input, .contact-card textarea {
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .contact-card button {
+      background-color: #6b4e31;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .support-section { text-align: center; margin-bottom: 40px; }
+    .support-section h3 { color: #6b4e31; font-size: 1.5em; }
+    .support-section p { color: #8b5e3c; }
+    .support-section a { color: #6b4e31; text-decoration: underline; }
+    footer {
+      background-color: #6b4e31;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ChocoDelight</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ecom.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Links.html">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Brz Choco
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Thor_(Marvel_Cinematic_Universe)" target="_blank">Truffles</a></li>
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Loki_(Marvel_Cinematic_Universe)" target="_blank">Brigaderio</a></li>
+                  <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Wanda_Maximoff_(Marvel_Cinematic_Universe)" target="_blank">Bonpota</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.marvel.com/comics/characters" target="_blank">More </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+            <div id="root"></div>
+
+  <script type="text/babel">
+    const HeaderSection = () => (
+      <section className="header-section">
+        <h2>Contact ChocoDelight</h2>
+        <p>We’d love to hear from you! Reach out with any questions or feedback.</p>
+      </section>
+    );
+
+    const ContactForm = () => (
+      <div className="contact-card">
+        <h3>Contact Form</h3>
+        <form style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message" rows="4" />
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    );
+
+    const StoreLocator = () => (
+      <div className="store-card">
+        <h3>Store Locator</h3>
+        <p>Visit us at:</p>
+        <p>123 Chocolate Lane, Cocoa City, CC 12345</p>
+        <p>Open: Mon-Fri, 10 AM - 7 PM IST</p>
+      </div>
+    );
+
+    const SupportSection = () => (
+      <section className="support-section">
+        <h3>Customer Support</h3>
+        <p>Email: <a href="mailto:support@chocodelight.com">support@chocodelight.com</a></p>
+        <p>Phone: +1-800-CHOCOLATE</p>
+        <p>Available: Mon-Fri, 9 AM - 6 PM IST</p>
+      </section>
+    );
+
+    const Footer = () => (
+      <footer>
+        <p>&copy; 2025 ChocoDelight. All rights reserved.</p>
+        <p>Contact as of 11:07 PM IST, Monday, August 18, 2025.</p>
+      </footer>
+    );
+
+    const App = () => (
+      <main>
+        <HeaderSection />
+        <section className="contact-grid">
+          <ContactForm />
+          <StoreLocator />
+        </section>
+        <SupportSection />
+        <Footer />
+      </main>
+    );
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+      
+
+    <script src="SearchDom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

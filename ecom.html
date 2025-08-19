@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Online</title>
+  <style>
+    header {
+      background-color: #6b4e31;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 2em; font-weight: bold; margin-left: 20px; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li { margin: 0 15px; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .search-bar {
+      margin: 0 20px;
+      display: flex;
+    }
+    .search-bar input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+    .search-bar button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #fff;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    body { 
+      background-color: #362811;
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+    }
+    .product-grid { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px; }
+    .product { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 200px; text-align: center; }
+    .product h3 { color: #030303; }
+    .product p { color: #555; }
+    .description { font-size: 0.9em; color: #777; margin-top: 5px; }
+  </style>
+</head>
+<body>
+    <header style="text-align: right; padding: 30px; background-color: #222; color: #fff;"><div class="logo">ChocoDelight</div>
+    <nav>
+      <ul>
+        <li><a href="ecom.html">Home</a></li>
+        <li><a href="ShopNow.html">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search chocolates...">
+      <button>🔍</button>
+    </div>
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div></header>
+  <h1 style="text-align: center;color: aquamarine;" >Only Chocolate</h1>
+  <div class="product-grid">
+    <div class="product">
+      <h3 style="color: aquamarine;">Ind Choco</h3>
+      <p style="color: rgb(247, 49, 4);">$19.99</p>
+    </div>
+    <div class="product">
+      <h3 style="color: aquamarine;">Brz Choco</h3>
+      <p style="color: rgb(247, 49, 4);">$29.99</p>
+    </div>
+    <div class="product" >
+      <h3 style="color: aquamarine;">Vtn Choco</h3>
+      <p style="color: rgb(250, 249, 249);">$14.99</p>
+    </div>
+  </div>
+  <main style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f9e4d4;">
+    <section style="text-align: center; margin-bottom: 40px;">
+      <h2 style="color: #6b4e31; font-size: 2em;">Our Chocolate Collection</h2>
+      <p style="color: #8b5e3c;">Indulge in the finest chocolates crafted with love.</p>
+    </section>
+
+    <section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <div style="width: 200px; border: 1px solid #ddd; padding: 10px; background-color: #fff; text-align: center; border-radius: 5px;">
+        <h3 style="color: #6b4e31;">Dark Chocolate</h3>
+        <p style="color: #8b5e3c;">Rich and smooth, 70% cocoa.</p>
+        <p style="font-weight: bold;">$5.99</p>
+        <button style="background-color: #6b4e31; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+      </div>
+      <div style="width: 200px; border: 1px solid #ddd; padding: 10px; background-color: #fff; text-align: center; border-radius: 5px;">
+        <h3 style="color: #6b4e31;">Milk Chocolate</h3>
+        <p style="color: #8b5e3c;">Creamy and delicious.</p>
+        <p style="font-weight: bold;">$4.99</p>
+        <button style="background-color: #6b4e31; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+      </div>
+      <div style="width: 200px; border: 1px solid #ddd; padding: 10px; background-color: #fff; text-align: center; border-radius: 5px;">
+        <h3 style="color: #6b4e31;">White Chocolate</h3>
+        <p style="color: #8b5e3c;">Sweet and silky.</p>
+        <p style="font-weight: bold;">$6.99</p>
+        <button style="background-color: #6b4e31; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Add to Cart</button>
+      </div>
+    </section>
+
+    <section style="text-align: center; margin-top: 40px;">
+      <a href="ShopNow.html"><button style="background-color: #8b5e3c; color: white; border: none; padding: 10px 20px; font-size: 1.2em; border-radius: 5px; cursor: pointer;" >Shop Now</button></a>
+    </section>
+
+    <footer style="background-color: #6b4e31; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+
+    <footer style="text-align: center; padding: 20px; background-color: #222; color: #fff;">
+        <p>&copy; 2023 Sweet & Sour Chocolate. All rights reserved.</p>
+        <p><a href="https://www.sweetsourchocolate.com" style="color: #e07b39;">Visit our website</a></p>
+    </footer>
+
+</body>
+</html>
